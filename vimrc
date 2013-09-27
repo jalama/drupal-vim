@@ -57,3 +57,9 @@ nmap <F10> :set invnumber<CR>
 
 " change ctrlp map to ctrl-f
 let g:ctrlp_map = '<c-f>'
+
+" Usee local vimrc if available {
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
+" }
