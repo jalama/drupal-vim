@@ -3,31 +3,34 @@ filetype off                   " required!
 syntax enable
 
 " Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
-" My Bundles here:
+" My Plugins here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'majutsushi/tagbar'
-Bundle 'kien/ctrlp.vim'
-Bundle 'ervandew/supertab'
-Bundle 'benjifisher/Vim-Plugin-for-Drupal'
-Bundle 'corntrace/bufexplorer'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'spf13/PIV'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
+" Plugin 'benjifisher/Vim-Plugin-for-Drupal'
+Plugin 'corntrace/bufexplorer'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'spf13/PIV'
 
 " Solarized
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()
+
 set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
