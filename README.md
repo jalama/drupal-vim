@@ -9,6 +9,8 @@ cd ~/
 
 cp ~/.vimrc ~/.vimrc.local
 
+git clone git@github.com:jalama/drupal-vim.git
+
 ln -s drupal-vim/vimrc ~/.vimrc
 
 cd drupal-vim
